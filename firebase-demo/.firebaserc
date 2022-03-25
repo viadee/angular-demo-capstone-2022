@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-fire-workshop-demo": {
+      "hosting": {
+        "fue-mobile-workshop-firebase-demo": [
+          "angular-fire-workshop-demo"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-fire-workshop-demo"
+  }
+}

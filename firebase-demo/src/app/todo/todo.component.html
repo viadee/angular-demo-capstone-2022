@@ -1,0 +1,12 @@
+<h1>To Do List</h1>
+<div>
+  <label for="newItem">New to do item:</label>
+  <input type="text" name="newItem" id="newItem" [(ngModel)]="newItemDescription" />
+  <button type="button" (click)="onSubmit()">Submit</button>
+</div>
+<ul>
+  <li *ngFor="let todoItem of (todoItems | async)">
+    <span>{{ todoItem.description }} - </span>
+    <button type="button" (click)="onDelete(todoItem.id)">Delete</button>
+  </li>
+</ul>
